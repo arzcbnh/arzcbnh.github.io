@@ -1,14 +1,65 @@
 :root {
-    --blue: #4bf0f7;
-    --green: #30ffc7;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(var(--blue) 0%, var(--green) 100%);
+    --aqua: #13d4ce;
+    --green: #41ff75;
+    --dark: #303030;
+    --persian: #02aa9d;
 }
 
 body {
-    margin: 100px;
+    color: #fafafa;
+    font-family: sans;
+
+    background-color: #303030;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #202020;
+    border-bottom: 2px solid var(--aqua);
+    padding: 1em;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 3em;
+    display: block;
+}
+
+.logo img + img {
+    margin-left: .75em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    border: 2px solid var(--aqua);
+    padding: .5em 2em;
+}
+
+nav li + li {
+    margin-left: .5em;
+}
+
+nav ul li a {
+    color: var(--aqua);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main {
+    width: 768px;
+    background-color: #202020;
+    border: 2px solid var(--aqua);
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
 }
